@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>yodeck-welcome-screen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link href="css/template.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        /* =========================================
+           VERFÜGBARE FARBEN
+           ========================================= */
+
+        /* Die Farbe einsetzen:
+           z.B: background: var(--blue);
+        */
+
+        :root {
+
+            /* =========================
+            Neutrale Farben
+            ========================= */
+
+            --white: #ffffff;
+            --light-gray: #e6e6e6;
+            --gray: #9da3a8;
+            --dark-gray: #555b60;
+            --black: #212529;
+
+
+            /* =========================
+            Farben
+            ========================= */
+
+            --blue: #7dbfd4;
+            --green: #9adaa9;
+            --cyan: #6ed0df;
+            --yellow: #f0e266;
+            --red: #d17b78;
+
+            --purple: #8171bb;
+            --orange: #e0b068;
+            --teal: #50a78d;
+        }
+
+
+        /* =========================================
+           HINTERGRUNDFARBE
+           ========================================= */
+
+        body {
+            background: var(--light-gray);
+        }
+
+
+        /* =========================================
+           WELCOME CARD
+           ========================================= */
+
+        .welcome-card {
+
+            /* Hintergrundfarbe */
+            background: var(--blue);
+
+            /* Textfarbe */
+            color: var(--black);
+        }
+
+
+        /* =========================================
+           TITEL
+           ========================================= */
+
+        h1 {
+
+            /* Titel: Schriftgrösse */
+            font-size: 50px;
+
+            /* Titel: Schriftstärke */
+            font-weight: 600;
+        }
+
+
+        /* =========================================
+           NAME
+           ========================================= */
+
+        .name {
+
+            /* Schriftgrösse */
+            font-size: 50px;
+
+            /* Schriftstärke */
+            font-weight: 600;
+
+            /* Farbe */
+            color: var(--yellow);
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    Brot 3
+
+    <div class="container-fluid screen fade-in">
+
+        <!-- =========================================
+             LINKE SEITE
+             ========================================= -->
+
+        <div class="left-column">
+
+            <!-- Box 1 -->
+            <div class="welcome-card">
+
+                <div class="icon">
+                    <i class="bi-person-heart"></i>
+                </div>
+
+                <h1>Götti</h1>
+
+                <div class="subtitle">
+                    Vorname Nachname
+                    <br>
+                    Funktion
+                </div>
+
+            </div>
+
+
+            <!-- Box 2 -->
+            <div class="welcome-card">
+
+                <div class="icon">
+                    <i class="bi bi-calendar3"></i>
+                </div>
+
+                <h1>Arbeitstage</h1>
+
+                <div class="subtitle">
+                    Mo. bis Mi.
+                </div>
+
+            </div>
+
+
+            <!-- Box 3 -->
+            <div class="welcome-card">
+
+                <div class="icon">
+                    <i class="bi bi-clock"></i>
+                </div>
+
+                <h1>Arbeitszeit</h1>
+
+                <div class="subtitle">
+                    08.00 - 15.00
+                </div>
+
+            </div>
+
+
+            <!-- Box 4 -->
+            <div class="welcome-card">
+
+                <div class="icon">
+                    <i class="bi bi-cup-hot"></i>
+                </div>
+
+                <h1>Pausen</h1>
+
+                <div class="subtitle">
+                    <ul>
+                        <li>Morgen: 10.00 - 10.15</li>
+                        <li>Mittag: 11.55 - 13.00</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+             RECHTE WELCOME BOX
+             ========================================= -->
+
+        <div class="welcome-card right-box">
+
+            <div class="icon">
+                <i class="bi bi-person"></i>
+            </div>
+
+            <h1>
+                Herzlich Willkommen in der ESPAS
+            </h1>
+
+            <div class="name">
+                Vorname Nachname
+            </div>
+
+            <div class="subtitle">
+                Schön, dass du heute als Schnupperer bei uns bist.
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

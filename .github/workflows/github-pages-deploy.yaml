@@ -1,0 +1,38 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+    paths-ignore:
+      - '.github/**'
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        id: checkout
+        uses: actions/checkout@v7
+
+      - name: Upload Build Artifact
+        id: build
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: .
+
+      - name: Deploy Page
+        id: deploy
+        uses: actions/deploy-pages@v5

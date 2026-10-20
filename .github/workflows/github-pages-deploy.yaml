@@ -4,9 +4,12 @@ on:
   push:
     branches-ignore:
       - main
+      - feature/**
 
-    paths-ignore:
-      - '.github/**'
+    paths:
+      - src/**
+
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -31,7 +34,7 @@ jobs:
         id: build
         uses: actions/upload-pages-artifact@v5
         with:
-          path: .
+          path: src
 
       - name: Deploy Page
         id: deploy

@@ -1,0 +1,179 @@
+# Yodeck Welcome Screen
+
+Wilkommen beim **Yodeck Welcome Screen Projekt**! Hier wirst Du einfache Änderungen an einer Webseite vornehmen können und lernst einige grundlegende **Git-Befehle** kennen.
+
+## Inhalt
+
+1. [Projekt aufsetzen](#1-projekt-aufsetzen)
+    1. [Repository klonen](#11-repository-klonen)
+    2. [Eigenen Branch erstellen](#12-eigenen-branch-erstellen)
+2. [Code anpassen](#2-code-anpassen)
+    1. [Namen und Funktion einfügen](#21-namen-und-funktion-einfügen)
+    2. [Farben anpassen](#22-farben-anpassen)
+3. [Codeanpassungen pushen](#3-codeanpassungen-pushen)
+    1. [Staging](#31-staging)
+    2. [Commit](#32-commit)
+    3. [Push](#33-push)
+4. [Yodeck](#4-yodeck)
+
+* [Weitere Informationen](#weitere-informationen)
+  * [Glossar](#glossar)
+
+## 1. Projekt aufsetzen
+
+### 1.1 Repository klonen
+
+Bevor Du am Code arbeiten kannst, musst du das Yodeck-Projekt auf deinen Computer herunterladen. Erstelle dafür mit dem folgenden Befehl einen **`clone`** des Projekts:
+
+```sh
+git clone https://github.com/espas-bi-it-edu/yodeck-welcome-screen.git
+```
+
+Navigiere nun in den neu erstellten Ordner der Repository:
+
+```sh
+cd ./yodeck-welcome-screen
+```
+
+### 1.2 Eigenen Branch erstellen
+
+Damit Deine Anpassungen die Arbeit von anderen Schnupperern nicht überschreiben oder anderswertig beeinträchtigen, arbeitest Du auf einem eigenen **Branch**, also einem, Ast der vom Hauptprojekt abspaltet und parallel weiterläuft.
+
+Nutze den folgenden Befehl, um Deinen persönlichen Branch zu erstellen.
+
+> [!CAUTION]
+> Ersetze `Vorname-Nachname` mit Deinem eigenen Namen mit Bindestrichen dazwischen!
+
+```sh
+git checkout -b Vorname-Nachname
+```
+
+Jetzt hast Du den Branch bei Dir auf dem Computer erstellt. Damit dieser Branch dann aber auch auf der Repository im GitHub existiert, musst Du ihn **pushen**. Verwende dafür den folgenden Befehl:
+
+```sh
+git push -u origin Vorname-Nachname
+```
+
+## 2. Code anpassen
+
+Öffne nun die Datei `index.html`. Hier kannst du die Struktur und die Inhalte der Yodeck-Welcome-Screen Webseite bearbeiten.
+
+### 2.1 Namen und Funktion einfügen
+
+Suche die folgende Stelle in der `index.html`-Datei und ersetze `Vorname Nachname` mit dem Namen des nächsten Schnupperers. Wende dich an Deine Fachperson, sie wird Dir den Namen sagen.
+
+```html
+<!-- Willkommen -->
+<div class="card welcome-card">
+    <span class="icon bi-person"></span>
+
+    <h2>Herzlich Willkommen in der ESPAS</h2>
+
+    <!-- Name des Schnupperer -->
+    <h1 class="name">Vorname Nachname</h1>
+
+    <p>Schön, dass Du heute als Schnupperer bei uns bist!</p>
+</div>
+```
+
+Füge nun auch noch den Namen und die Funktion des Götti ein.
+
+```html
+<!-- Götti -->
+<div class="card info-card">
+    <span class="icon bi-person-heart" />
+
+    <h2>Dein Götti</h2>
+
+    <!-- Name und Funktion des Götti -->
+    <ul>
+        <li>Vorname Nachname</li>
+        <li>Funktion</li>
+    </ul>
+</div>
+```
+
+> [!TIP]
+> Wenn du sehen willst, wie die Webseite mit deinen Änderungen aussieht, dann kannst du sie ganz einfach im Web-Browser öffnen indem du im Windows Explorer die `index.html`-Datei öffnest. Wenn Du weitere Änderungen vornimmst, musst Du die Seite neu laden, damit sie angezeigt werden.
+
+### 2.2 Farben anpassen
+
+Ganz oben in der `index.html`-Daten findest du einige vordefinierte Farben, die du für die nächste Aufgabe verwenden kannst:
+
+```css
+:root {
+    /* Neutrale Farben */
+    --white: #ffffff;
+    --light-gray: #e6e6e6;
+    --gray: #9da3a8;
+    --dark-gray: #555b60;
+    --black: #212529;
+
+    /* Farben */
+    --blue: #7dbfd4;
+    --green: #9adaa9;
+    --cyan: #6ed0df;
+    --yellow: #f0e266;
+    --red: #d17b78;
+
+    --purple: #8171bb;
+    --orange: #e0b068;
+    --teal: #50a78d;
+}
+```
+
+```css
+/* Hintergrundfarbe */
+body {
+    background-color: var(--light-gray);
+}
+
+/* Kartenfarben */
+.card {
+    background-color: var(--blue);
+    color: var(--black);
+}
+
+/* Farbe des Namen */
+.name {
+    color: var(--yellow);
+}
+```
+
+## 3. Codeanpassungen pushen
+
+### 3.1 Staging
+
+Als ersten Schritt musst du deine Änderungen **stagen**. Du sagst dem Git-Programm, welche veränderten Dateien hochgeladen werden sollen. Da wir nur die `index.html`-Datei verändert haben, können wir problemlos alle Änderungen stagen. Führe dafür den folgenden Befehl aus:
+
+```sh
+git add .
+```
+
+> [!TIP]
+> Der Punkt bei `git add .` bedeutet, dass ALLE bearbeiteten Dateien für einen Commit staged werden. Wenn nur bestimmte veränderte Dateien in den Commit aufgenommen werden sollten, können diese auch einzeln hinzugefügt werden.
+> Beispiel: `git add index.html`
+
+### 3.2 Commit
+
+```sh
+git commit -m "Message"
+```
+
+### 3.3 Push
+
+```sh
+git push
+```
+
+## 4. Yodeck
+
+## Weitere Informationen
+
+### Glossar
+
+| Begriff            | Erklärung                                                                               | Weitere Informationen                                |
+| ------------------ | --------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| Git                | ein Versionierungs- und Versionen-Management-Tool                                       | [Git auf W3Schools](https://www.w3schools.com/git/)  |
+| GitHub             | ein Cloud-Anbieter, bei welchem Git-Repositories hosted werden können                   |                                                      |
+| Visual Studio Code | ein kostenloser Text-Editor, mit welchen man Programmcode erstellen und bearbeiten kann | [Visual Studio Code](https://code.visualstudio.com/) |

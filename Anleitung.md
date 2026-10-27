@@ -157,16 +157,38 @@ git add .
 ### 3.2 Commit
 
 ```sh
-git commit -m "Message"
+git commit -m "Hintergrundfarbe geändert"
 ```
+> [!TIP]
+> Der Befehl «git commit -m "Hintergrundfarbe geändert"» erstellt einen neuen Commit in deinem Git‑Repository und speichert alle aktuell vorgemerkten Änderungen (staged changes) zusammen mit der Commit‑Nachricht " Hintergrundfarbe geändert".
+> Beispiel: `git commit -m "Hintergrundfarbe geändert"`
 
 ### 3.3 Push
 
 ```sh
 git push
 ```
+> Aktuell sind deine Änderungen nur auf dem lokalen Gerät gespeichert. </br>
+> Mit “git push” werden sie auf den Git-Server hochgeladen.
+
+
+## 4. Aktualisierte Webseite anzeigen
+> [!TIP]
+> Weil es ein paar Sekunden dauert, bis die Webseite aktualisiert deployt wurde, solltest du etwa eine Minute warten:
+
+### 4.1 InPrivate-Fenster in Microsoft Edge öffnen:
+
+![alt text](docs/screenshots/image.png)
+
+### 4.2 Folgenden Hyperlink in URL von Webbrowser eingeben:
+
+```sh
+https://espas-bi-it-edu.github.io/yodeck-welcome-screen/
+```
+![alt text](docs/screenshots/image-1.png)
 
 ## 4. Yodeck
+
 
 ## Weitere Informationen
 

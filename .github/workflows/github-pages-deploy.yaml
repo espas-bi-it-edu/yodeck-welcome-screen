@@ -1,41 +1,54 @@
 name: Deploy to GitHub Pages
 
+# Triggers
 on:
+  # Push event
   push:
+    # Ignore pushes on main and feature branches
     branches-ignore:
       - main
       - feature/**
 
+    # Only trigger when files under src were changed
     paths:
       - src/**
 
+  # Allow manual triggering
   workflow_dispatch:
 
+# Jobs
 jobs:
   deploy:
     name: Deploy to GitHub Pages
 
+    # Set runner OS
+    runs-on: ubuntu-latest
+
+    # Grant write permissions for GitHub Pages environment
     permissions:
       pages: write
       id-token: write
 
+    # Set environment variables for runner
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
 
-    runs-on: ubuntu-latest
-
+    # Steps to run
     steps:
+      # Checkout push ref
       - name: Checkout Repository
         id: checkout
         uses: actions/checkout@v7
 
+      # Create artifact (archive) of src-files
       - name: Upload Build Artifact
         id: build
         uses: actions/upload-pages-artifact@v5
         with:
           path: src
 
+      # Deploy artifact on GitHub Pages
       - name: Deploy Page
         id: deploy
         uses: actions/deploy-pages@v5

@@ -95,7 +95,7 @@ Füge nun auch noch den Namen und die Funktion des Götti ein.
 ```html
 <!-- Götti -->
 <div class="card info-card">
-    <span class="icon bi-person-heart" />
+    <span class="icon bi-person-heart"></span>
 
     <h2>Dein Götti</h2>
 

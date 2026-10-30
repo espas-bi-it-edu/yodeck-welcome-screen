@@ -1,6 +1,6 @@
 # Yodeck Welcome Screen
 
-Wilkommen beim **Yodeck Welcome Screen Projekt**! Hier wirst Du einfache Änderungen an einer Webseite vornehmen können und lernst einige grundlegende **Git-Befehle** kennen.
+Wilkommen beim **Yodeck Welcome Screen Projekt**! Hier wirst Du einfache Änderungen an einer Webseite vornehmen können und lernst einige grundlegende **Git**-Befehle kennen.
 
 ## Inhalt
 
@@ -21,9 +21,20 @@ Wilkommen beim **Yodeck Welcome Screen Projekt**! Hier wirst Du einfache Änderu
 
 ## 1. Projekt aufsetzen
 
+Damit Du überhaupt mit dem Yodeck-Projekt anfangen kannst, musst Du es zuerst aus dem Internet herunterladen. Code-Projekte werden oftmals in sogenannten **Repositories** auf **GitHub** abgelegt und können von da **geklont** werden.
+
 ### 1.1 Repository klonen
 
-Bevor Du am Code arbeiten kannst, musst du das Yodeck-Projekt auf deinen Computer herunterladen. Erstelle dafür mit dem folgenden Befehl einen **`clone`** des Projekts:
+Öffne ein Terminal und navigiere zu Deinem persönlichen Ordner auf dem OneDrive:
+
+```sh
+cd 'C:\Users\bmschnupperer\OneDrive - ESPAS Stiftung\Schnuppertransfer\Vorname Nachname'
+```
+
+> [!WARNING]
+> Ersetze im Befehl `Vorname Nachname` mit Deinem eigenen Namen.
+
+Jetzt bist Du am richtigen Ort, um das Projekt herunterzuladen. Mit dem folgenden Befehl erstellst Du eine lokale Kopie, auf welcher Du arbeiten kannst:
 
 ```sh
 git clone https://github.com/espas-bi-it-edu/yodeck-welcome-screen.git
@@ -32,27 +43,30 @@ git clone https://github.com/espas-bi-it-edu/yodeck-welcome-screen.git
 Navigiere nun in den neu erstellten Ordner der Repository:
 
 ```sh
-cd ./yodeck-welcome-screen
+cd .\yodeck-welcome-screen
 ```
 
 ### 1.2 Eigenen Branch erstellen
 
-Damit Deine Anpassungen die Arbeit von anderen Schnupperern nicht überschreiben oder anderswertig beeinträchtigen, arbeitest Du auf einem eigenen **Branch**, also einem, Ast der vom Hauptprojekt abspaltet und parallel weiterläuft.
+Nun erstellst Du einen eigenen **Branch** (auf deutsch **Ast**), also eine Abspaltung vom Projektstamm (oder `main`-Branch). Wenn Änderungen auf einem Branch gemacht werden sind diese auch nur auf den Branch limitiert, die Arbeit anderer wird dadurch nicht beeinträchtigt. So können Entwickler ihre Features auf eigenen Branches entwickeln, ohne Angst zu haben, dass sie für die anderen etwas kaputt machen.
 
-Nutze den folgenden Befehl, um Deinen persönlichen Branch zu erstellen.
-
-> [!CAUTION]
-> Ersetze `Vorname-Nachname` mit Deinem eigenen Namen mit Bindestrichen dazwischen!
+Führe den folgenden Befehl aus:
 
 ```sh
 git checkout -b Vorname-Nachname
 ```
+
+> [!WARNING]
+> Ersetze `Vorname-Nachname` mit Deinem eigenen Namen **mit** Bindestrichen dazwischen!
 
 Jetzt hast Du den Branch bei Dir auf dem Computer erstellt. Damit dieser Branch dann aber auch auf der Repository im GitHub existiert, musst Du ihn **pushen**. Verwende dafür den folgenden Befehl:
 
 ```sh
 git push -u origin Vorname-Nachname
 ```
+
+> [!WARNING]
+> Ersetze `Vorname-Nachname` mit Deinem eigenen Namen **mit** Bindestrichen dazwischen!
 
 ## 2. Code anpassen
 

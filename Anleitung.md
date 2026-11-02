@@ -21,7 +21,7 @@ Wilkommen beim **Yodeck Welcome Screen Projekt**! Hier wirst Du einfache Änderu
 
 ## 1. Projekt aufsetzen
 
-Damit Du überhaupt mit dem Yodeck-Projekt anfangen kannst, musst Du es zuerst aus dem Internet herunterladen. Code-Projekte werden oftmals in sogenannten **Repositories** auf **GitHub** abgelegt und können von da **geklont** werden.
+Damit Du überhaupt mit dem Yodeck-Projekt anfangen kannst, musst Du es zuerst aus dem Internet herunterladen. Code-Projekte wie dieses hier werden oftmals in sogenannten **Repositories** auf **GitHub** (wo Du dich im Moment auch gerade befindest) abgelegt und können von da **geklont** werden. Ein Klon ist eine lokale Kopie der GitHub-Repository auf Deinem Computer, auf welcher Du arbeiten kannst.
 
 ### 1.1 Repository klonen
 
@@ -32,7 +32,7 @@ cd 'C:\Users\bmschnupperer\OneDrive - ESPAS Stiftung\Schnuppertransfer\Vorname N
 ```
 
 > [!WARNING]
-> Ersetze im Befehl `Vorname Nachname` mit Deinem eigenen Namen.
+> Ersetze im Befehl `Vorname Nachname` mit Deinem eigenen Namen. Kontrolliere, ob Du am richtigen Ort bist, bevor Du weiterfährst.
 
 Jetzt bist Du am richtigen Ort, um das Projekt herunterzuladen. Mit dem folgenden Befehl erstellst Du eine lokale Kopie, auf welcher Du arbeiten kannst:
 
@@ -48,7 +48,7 @@ cd .\yodeck-welcome-screen
 
 ### 1.2 Eigenen Branch erstellen
 
-Nun erstellst Du einen eigenen **Branch** (auf deutsch **Ast**), also eine Abspaltung vom Projektstamm (oder `main`-Branch). Wenn Änderungen auf einem Branch gemacht werden sind diese auch nur auf den Branch limitiert, die Arbeit anderer wird dadurch nicht beeinträchtigt. So können Entwickler ihre Features auf eigenen Branches entwickeln, ohne Angst zu haben, dass sie für die anderen etwas kaputt machen.
+Als Erstes erstellst Du Deinen eigenen **Branch** (auf deutsch **Ast**) des Projekts. Auf Branches können Entwickler Änderungen am Code vornehmen, ohne den **`main`-Branch**, also den **Hauptbranch** oder **Stamm** des Projekts, oder die Branches Anderer zu beeinträchtigen.
 
 Führe den folgenden Befehl aus:
 
@@ -59,7 +59,7 @@ git checkout -b Vorname-Nachname
 > [!WARNING]
 > Ersetze `Vorname-Nachname` mit Deinem eigenen Namen **mit** Bindestrichen dazwischen!
 
-Jetzt hast Du den Branch bei Dir auf dem Computer erstellt. Damit dieser Branch dann aber auch auf der Repository im GitHub existiert, musst Du ihn **pushen**. Verwende dafür den folgenden Befehl:
+Nun existiert Dein Branch bei Dir auf dem Computer, also **lokal**. Damit er aber auch auf der GitHub Repository im Internet, also auf dem sogenannten **remote** existiert, musst Du ihn mit einem **`push`** hochladen. Verwende dafür den Befehl:
 
 ```sh
 git push -u origin Vorname-Nachname
@@ -67,6 +67,10 @@ git push -u origin Vorname-Nachname
 
 > [!WARNING]
 > Ersetze `Vorname-Nachname` mit Deinem eigenen Namen **mit** Bindestrichen dazwischen!
+
+Der Befehl erstellt Deinen Branch auf der GitHub Repository und **verlinkt** ihn mit Deinem lokalen Branch. Wenn Du dann in den nächsten Schritten Änderungen am Code vornimmst und diese auf GitHub hochlädst, weiss Git nun, wo es die Aktualisierungen hinlegen muss.
+
+Jetzt bist Du bereit, dich in den Code zu stürzen.
 
 ## 2. Code anpassen
 

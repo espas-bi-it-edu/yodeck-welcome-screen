@@ -2,23 +2,6 @@
 
 Wilkommen beim **Yodeck Welcome Screen Projekt**! Hier wirst Du einfache Änderungen an einer Webseite vornehmen können und lernst einige grundlegende **Git**-Befehle kennen.
 
-## Inhalt
-
-1. [Projekt aufsetzen](#1-projekt-aufsetzen)
-    1. [Repository klonen](#11-repository-klonen)
-    2. [Eigenen Branch erstellen](#12-eigenen-branch-erstellen)
-2. [Code anpassen](#2-code-anpassen)
-    1. [Namen und Funktion einfügen](#21-namen-und-funktion-einfügen)
-    2. [Farben anpassen](#22-farben-anpassen)
-3. [Codeanpassungen pushen](#3-codeanpassungen-pushen)
-    1. [Staging](#31-staging)
-    2. [Commit](#32-commit)
-    3. [Push](#33-push)
-4. [Yodeck](#4-yodeck)
-
-* [Weitere Informationen](#weitere-informationen)
-  * [Glossar](#glossar)
-
 ## 1. Projekt aufsetzen
 
 Damit Du überhaupt mit dem Yodeck-Projekt anfangen kannst, musst Du es zuerst aus dem Internet herunterladen. Code-Projekte wie dieses hier werden oftmals in sogenannten **Repositories** auf **GitHub** (wo Du dich im Moment auch gerade befindest) abgelegt und können von da **geklont** werden. Ein Klon ist eine lokale Kopie der GitHub-Repository auf Deinem Computer, auf welcher Du arbeiten kannst.

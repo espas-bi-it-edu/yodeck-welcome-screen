@@ -2,11 +2,11 @@
 
 Wilkommen beim **Yodeck Welcome Screen Projekt**! Hier wirst Du einfache Änderungen an einer Webseite vornehmen können und lernst einige grundlegende **Git**-Befehle kennen.
 
-## 1. Projekt aufsetzen
+## 1 - Projekt aufsetzen
 
 Damit Du überhaupt mit dem Yodeck-Projekt anfangen kannst, musst Du es zuerst aus dem Internet herunterladen. Code-Projekte wie dieses hier werden oftmals in sogenannten **Repositories** auf **GitHub** (wo Du dich im Moment auch gerade befindest) abgelegt und können von da **geklont** werden. Ein Klon ist eine lokale Kopie der GitHub-Repository auf Deinem Computer, auf welcher Du arbeiten kannst.
 
-### 1.1 Repository klonen
+### 1.1 - Repository klonen
 
 Öffne ein Terminal und navigiere zu Deinem persönlichen Ordner auf dem OneDrive:
 
@@ -14,7 +14,7 @@ Damit Du überhaupt mit dem Yodeck-Projekt anfangen kannst, musst Du es zuerst a
 cd 'C:\Users\bmschnupperer\OneDrive - ESPAS Stiftung\Schnuppertransfer\Vorname Nachname'
 ```
 
-> [!WARNING]
+> [!IMPORTANT]
 > Ersetze im Befehl `Vorname Nachname` mit Deinem eigenen Namen. Kontrolliere, ob Du am richtigen Ort bist, bevor Du weiterfährst.
 
 Jetzt bist Du am richtigen Ort, um das Projekt herunterzuladen. Mit dem folgenden Befehl erstellst Du eine lokale Kopie, auf welcher Du arbeiten kannst:
@@ -29,7 +29,7 @@ Navigiere nun in den neu erstellten Ordner der Repository:
 cd .\yodeck-welcome-screen
 ```
 
-### 1.2 Eigenen Branch erstellen
+### 1.2 - Eigenen Branch erstellen
 
 Als Erstes erstellst Du Deinen eigenen **Branch** (auf deutsch **Ast**) des Projekts. Auf Branches können Entwickler Änderungen am Code vornehmen, ohne den **`main`-Branch**, also den **Hauptbranch** oder **Stamm** des Projekts, oder die Branches Anderer zu beeinträchtigen.
 
@@ -39,7 +39,7 @@ Führe den folgenden Befehl aus:
 git checkout -b Vorname-Nachname
 ```
 
-> [!WARNING]
+> [!IMPORTANT]
 > Ersetze `Vorname-Nachname` mit Deinem eigenen Namen **mit** Bindestrichen dazwischen!
 
 Nun existiert Dein Branch bei Dir auf dem Computer, also **lokal**. Damit er aber auch auf der GitHub Repository im Internet, also auf dem sogenannten **remote** existiert, musst Du ihn mit einem **`push`** hochladen. Verwende dafür den Befehl:
@@ -48,7 +48,7 @@ Nun existiert Dein Branch bei Dir auf dem Computer, also **lokal**. Damit er abe
 git push -u origin Vorname-Nachname
 ```
 
-> [!WARNING]
+> [!IMPORTANT]
 > Ersetze `Vorname-Nachname` mit Deinem eigenen Namen **mit** Bindestrichen dazwischen!
 
 Der Befehl erstellt Deinen Branch auf der GitHub Repository und **verlinkt** ihn mit Deinem lokalen Branch. Wenn Du dann in den nächsten Schritten Änderungen am Code vornimmst und diese auf GitHub hochlädst, weiss Git nun, wo es die Aktualisierungen hinlegen muss.

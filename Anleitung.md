@@ -55,18 +55,26 @@ Der Befehl erstellt Deinen Branch auf der GitHub Repository und **verlinkt** ihn
 
 Jetzt bist Du bereit, dich in den Code zu stürzen.
 
-## 2. Code anpassen
+## 2 - Code anpassen
 
-Öffne nun die Datei `index.html`. Hier kannst du die Struktur und die Inhalte der Yodeck-Welcome-Screen Webseite bearbeiten.
+In den nächsten Schritten wirst Du Anpassungen am Code vornehmen. Dafür brauchen wir einen passenden Editor, in welchen Du diese Dateien sehen und bearbeiten kannst. Für diese Aufgabe verwendest Du **Visual Studio Code**. Du kannst das Programm mit dem Yodeck-Projekt ganz einfach mit dem folgenden Befehl öffnen:
 
-### 2.1 Namen und Funktion einfügen
+```sh
+code .
+```
 
-Suche die folgende Stelle in der `index.html`-Datei und ersetze `Vorname Nachname` mit dem Namen des nächsten Schnupperers. Wende dich an Deine Fachperson, sie wird Dir den Namen sagen.
+Visual Studio Code ist eine Entwicklungsumgebung, in welcher Programmcode gelesen, bearbeitet und getestet werden kann. Du hast links ein Explorer-Fenster (1), welches die Ordner und Dateien des aktuell geöffneten Projekts anzeigt. Im Hauptfenster (2) in der Mitte werden Dateien gelesen und bearbeitet. Ausserdem kannst du ein Panel mit einem Terminal öffnen, indem du im Menü-Band (3) ganz oben auf `Terminal > New Terminal` klickst.
+
+<!-- TODO Screenshot VS Code mit markierten Elementen -->
+
+### 2.1 - Namen des Schnupperer einsetzen
+
+Suche im Explorer (links) im `src`-Ordner nach der Datei `index.html` und klicke sie an. In einem `html`-File wird der **Aufbau** und der **Inhalt** einer **Webseite** definiert. Schau dir die Datei ein wenig an und sieh, ob Du die Struktur verstehst, dann suche die folgende Stelle und setze den Namen des nächsten Schnupperers an der passenden Stelle ein. Wende dich an die Fachperson, sie wird dir den Namen sagen, den du einfügen sollst.
 
 ```html
 <!-- Willkommen -->
 <div class="card welcome-card">
-    <span class="icon bi-person"></span>
+    <span class="icon bi-person-fill"></span>
 
     <h2>Herzlich Willkommen in der ESPAS</h2>
 
@@ -77,7 +85,68 @@ Suche die folgende Stelle in der `index.html`-Datei und ersetze `Vorname Nachnam
 </div>
 ```
 
-Füge nun auch noch den Namen und die Funktion des Götti ein.
+> [!TIP]
+> Wenn du sehen willst, wie die Webseite mit deinen Änderungen aussieht, dann kannst du sie ganz einfach im Web-Browser öffnen indem du im Windows Explorer die `index.html`-Datei öffnest. Wenn Du weitere Änderungen vornimmst, musst Du die Seite neu laden, damit sie angezeigt werden.
+
+### 2.2 - Neue Version erstellen
+
+Jetzt hast Du deine erste Änderung am Code gemacht. Nun wirst Du diese neue Version auf GitHub hochladen. Das passiert in drei Phasen:
+
+1. **Staging**: Bereitstellen der Dateien, die in die neue Version (oder **Commit**) aufgenommen werden sollen
+2. **Commit**: Erstellen der neuen Version
+3. **Push**: Hochladen der neuen Version
+
+#### 2.2.1 - Staging
+
+Führe den folgenden Befehl aus:
+
+```sh
+git add .
+```
+
+Der Befehl nimmt alle Dateien, die gegenüber der vorherigen Version Veränderungen haben, und stellt sie für das Erstellen einer neuen Version bereit.
+
+> [!NOTE]
+> Der Punkt bei `git add .` bedeutet, dass **alle** bearbeiteten Dateien für einen Commit staged werden. Wenn nur bestimmte veränderte Dateien in den Commit aufgenommen werden sollten, können diese auch gezielt hinzugefügt werden.
+>
+> Beispiel:
+>
+> ```sh
+> git add index.html
+> ```
+
+#### 2.2.2 - Commit
+
+Ein **Commit** ist ein **Snapshot** oder vereinfacht eine neue **Version** des Projekts. Mit einem Commit erstellst du einen Version der Applikation, die später angeschaut oder wiederhergestellt werden kann. Ein Commit besteht aus den **Dateien**, die in dieser Version verändert wurden (und die du im Schritt [**Staging**](#221---staging) bereitgestellt hast) und einer **Commit-Message**, die in wenigen Worten beschreiben, was in dieser Version verändert wurde.
+
+Erstelle Deinen Commit mit dem Befehl:
+
+```sh
+git commit -m "Nachricht"
+```
+
+> [!IMPORTANT]
+> Ersetze die `Nachricht` mit einem kurzen Text, der die von Dir gemachten Änderungen beschreibt.
+>
+> Beispiel:
+>
+> ```sh
+> git commit -m "Name des Schnupperer angepasst"
+> ```
+
+#### 2.2.3 - Push
+
+Die neue Version hast Du jetzt auf deinem Computer erstellt. Jetzt musst Du sie noch auf den GitHub-Server hochladen. Das geht ganz einfach mit:
+
+```sh
+git push
+```
+
+Der Befehl nimmt alle neuen Versionen und schickt sie zum GitHub-Server, wo sie dann abgelegt und wieder heruntergeladen werden können.
+
+### 2.3 - Namen und Funktion des Götti einsetzen
+
+Nun machst Du eine weitere Änderung. Setze an der unten angezeigten Stelle den Namen und die Funktion des **Götti** für den neuen Schnupperer ein. Wende dich wieder an die Fachperson, um den Namen und die Funktion zu erfahren.
 
 ```html
 <!-- Götti -->
@@ -94,8 +163,10 @@ Füge nun auch noch den Namen und die Funktion des Götti ein.
 </div>
 ```
 
-> [!TIP]
-> Wenn du sehen willst, wie die Webseite mit deinen Änderungen aussieht, dann kannst du sie ganz einfach im Web-Browser öffnen indem du im Windows Explorer die `index.html`-Datei öffnest. Wenn Du weitere Änderungen vornimmst, musst Du die Seite neu laden, damit sie angezeigt werden.
+Wenn Du das erledigt hast, erstelle wieder eine neue Version, so wie Du es im Kapitel [2.2 - Neue Version erstellen](#22---neue-version-erstellen) gelernt hast.
+
+> [!IMPORTANT]
+> Achte darauf, dass Du eine eigene Nachricht für den Commit schreibst, die die von dir gemachten Änderungen beschreibt.
 
 ### 2.2 Farben anpassen
 

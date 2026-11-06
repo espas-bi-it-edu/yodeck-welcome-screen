@@ -15,7 +15,13 @@ cd 'C:\Users\bmschnupperer\OneDrive - ESPAS Stiftung\Schnuppertransfer\Vorname N
 ```
 
 > [!IMPORTANT]
-> Ersetze im Befehl `Vorname Nachname` mit Deinem eigenen Namen. Kontrolliere, ob Du am richtigen Ort bist, bevor Du weiterfährst.
+> Ersetze im Befehl `Vorname Nachname` mit Deinem eigenen Namen.
+>
+> Beispiel:
+>
+> ```sh
+> cd 'C:\Users\bmschnupperer\OneDrive - ESPAS Stiftung\Schnuppertransfer\Max Mustermann'
+> ```
 
 Jetzt bist Du am richtigen Ort, um das Projekt herunterzuladen. Mit dem folgenden Befehl erstellst Du eine lokale Kopie, auf welcher Du arbeiten kannst:
 
@@ -41,6 +47,12 @@ git checkout -b Vorname-Nachname
 
 > [!IMPORTANT]
 > Ersetze `Vorname-Nachname` mit Deinem eigenen Namen **mit** Bindestrichen dazwischen!
+>
+> Beispiel:
+>
+> ```sh
+> git checkout -b Max-Mustermann
+> ```
 
 Nun existiert Dein Branch bei Dir auf dem Computer, also **lokal**. Damit er aber auch auf der GitHub Repository im Internet, also auf dem sogenannten **remote** existiert, musst Du ihn mit einem **`push`** hochladen. Verwende dafür den Befehl:
 
@@ -48,10 +60,7 @@ Nun existiert Dein Branch bei Dir auf dem Computer, also **lokal**. Damit er abe
 git push -u origin Vorname-Nachname
 ```
 
-> [!IMPORTANT]
-> Ersetze `Vorname-Nachname` mit Deinem eigenen Namen **mit** Bindestrichen dazwischen!
-
-Der Befehl erstellt Deinen Branch auf der GitHub Repository und **verlinkt** ihn mit Deinem lokalen Branch. Wenn Du dann in den nächsten Schritten Änderungen am Code vornimmst und diese auf GitHub hochlädst, weiss Git nun, wo es die Aktualisierungen hinlegen muss.
+Der Befehl erstellt Deinen Branch auf dem GitHub Repository und **verlinkt** ihn mit Deinem **lokalen Branch**. Wenn Du dann in den nächsten Schritten Änderungen am Code vornimmst und diese auf GitHub hochlädst, weiss Git nun, wo es die Aktualisierungen hinlegen muss.
 
 Jetzt bist Du bereit, dich in den Code zu stürzen.
 

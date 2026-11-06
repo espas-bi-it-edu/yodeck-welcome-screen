@@ -63,9 +63,9 @@ In den nächsten Schritten wirst Du Anpassungen am Code vornehmen. Dafür brauch
 code .
 ```
 
-Visual Studio Code ist eine Entwicklungsumgebung, in welcher Programmcode gelesen, bearbeitet und getestet werden kann. Du hast links ein Explorer-Fenster (1), welches die Ordner und Dateien des aktuell geöffneten Projekts anzeigt. Im Hauptfenster (2) in der Mitte werden Dateien gelesen und bearbeitet. Ausserdem kannst du ein Panel mit einem Terminal öffnen, indem du im Menü-Band (3) ganz oben auf `Terminal > New Terminal` klickst.
+Visual Studio Code ist eine Entwicklungsumgebung, in welcher Programmcode gelesen, bearbeitet und getestet werden kann. Du hast links ein Explorer-Fenster (1), welches die Ordner und Dateien des aktuell geöffneten Projekts anzeigt. Im Hauptfenster (2) in der Mitte werden Dateien gelesen und bearbeitet. Ausserdem kannst du ein Panel mit einem Terminal (3) öffnen, indem du im Menü-Band (4) ganz oben auf `Terminal > New Terminal` klickst.
 
-<!-- TODO Screenshot VS Code mit markierten Elementen -->
+![Screenshot VSCode](docs/screenshots/vscode.png)
 
 ### 2.1 - Namen des Schnupperer einsetzen
 

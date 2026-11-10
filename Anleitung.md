@@ -126,7 +126,7 @@ Der Befehl nimmt alle Dateien, die gegenüber der vorherigen Version Veränderun
 
 #### 2.2.2 - Commit
 
-Ein **Commit** ist ein **Snapshot** oder vereinfacht eine neue **Version** des Projekts. Mit einem Commit erstellst du einen Version der Applikation, die später angeschaut oder wiederhergestellt werden kann. Ein Commit besteht aus den **Dateien**, die in dieser Version verändert wurden (und die du im Schritt [**Staging**](#221---staging) bereitgestellt hast) und einer **Commit-Message**, die in wenigen Worten beschreiben, was in dieser Version verändert wurde.
+Ein **Commit** ist ein **Snapshot** oder vereinfacht eine neue **Version** des Projekts. Mit einem Commit erstellst du einen Version der Applikation, die später angeschaut oder wiederhergestellt werden kann. Ein Commit besteht aus den **Dateien**, die in dieser Version verändert wurden (und die du im Schritt [**Staging**](#221---staging) bereitgestellt hast), und einer **Commit-Message**, die in wenigen Worten beschreibt, was in dieser Version verändert wurde.
 
 Erstelle Deinen Commit mit dem Befehl:
 
@@ -140,7 +140,7 @@ git commit -m "Nachricht"
 > Beispiel:
 >
 > ```sh
-> git commit -m "Name des Schnupperer angepasst"
+> git commit -m "Name des Schnupperer eingefügt"
 > ```
 
 #### 2.2.3 - Push
@@ -175,7 +175,7 @@ Nun machst Du eine weitere Änderung. Setze an der unten angezeigten Stelle den 
 Wenn Du das erledigt hast, erstelle wieder eine neue Version, so wie Du es im Kapitel [2.2 - Neue Version erstellen](#22---neue-version-erstellen) gelernt hast.
 
 > [!IMPORTANT]
-> Achte darauf, dass Du eine eigene Nachricht für den Commit schreibst, die die von dir gemachten Änderungen beschreibt.
+> Schreibe eine eigene **Commit-Message**, die die von Dir gemachten Änderungen beschreibt.
 
 ### 2.2 Farben anpassen
 

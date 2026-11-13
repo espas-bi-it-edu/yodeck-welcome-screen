@@ -204,7 +204,7 @@ Das Yodeck-Projekt arbeitet mit einigen vordefinierten Farben, die hier über **
 ```
 
 > [!NOTE]
-> Wenn Du verstanden hast, wie dass die Farbvariablen funktionieren, darfst Du auch eigene Farben definieren, um Dein Design zu erstellen.
+> Wenn Du verstanden hast, wie die Farbvariablen funktionieren, darfst Du auch eigene Farben definieren, um Dein Design zu erstellen.
 
 Finde nun die folgende Stelle im Code. Hier werden für die verschiedenen Elemente der Seite die Farben definiert.
 

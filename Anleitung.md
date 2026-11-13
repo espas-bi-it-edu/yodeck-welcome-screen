@@ -153,6 +153,9 @@ git push
 
 Der Befehl nimmt alle neuen Versionen und schickt sie zum GitHub-Server, wo sie dann abgelegt und wieder heruntergeladen werden können.
 
+> [!NOTE]
+> Der ganze Commit-Prozess ist etwas, das ein Entwickler immer wieder macht. Du wirst im Rahmen dieser Aufgabe mehrmals hierhin zurückkehren und das Ganze nochmals durchführen.
+
 ### 2.3 - Namen und Funktion des Götti einsetzen
 
 Nun machst Du eine weitere Änderung im Code der `index.html`-Datei. Setze an der unten angezeigten Stelle den Namen und die Funktion des **Götti** für den neuen Schnupperer ein. Wende dich wieder an die Fachperson, um den Namen und die Funktion zu erfahren.

@@ -155,7 +155,7 @@ Der Befehl nimmt alle neuen Versionen und schickt sie zum GitHub-Server, wo sie 
 
 ### 2.3 - Namen und Funktion des Götti einsetzen
 
-Nun machst Du eine weitere Änderung. Setze an der unten angezeigten Stelle den Namen und die Funktion des **Götti** für den neuen Schnupperer ein. Wende dich wieder an die Fachperson, um den Namen und die Funktion zu erfahren.
+Nun machst Du eine weitere Änderung im Code der `index.html`-Datei. Setze an der unten angezeigten Stelle den Namen und die Funktion des **Götti** für den neuen Schnupperer ein. Wende dich wieder an die Fachperson, um den Namen und die Funktion zu erfahren.
 
 ```html
 <!-- Götti -->

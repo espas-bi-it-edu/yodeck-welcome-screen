@@ -177,9 +177,9 @@ Wenn Du das erledigt hast, erstelle wieder eine neue Version, so wie Du es im Ka
 > [!IMPORTANT]
 > Schreibe eine eigene **Commit-Message**, die die von Dir gemachten Änderungen beschreibt.
 
-### 2.2 Farben anpassen
+### 2.4 - Farben anpassen
 
-Ganz oben in der `index.html`-Daten findest du einige vordefinierte Farben, die du für die nächste Aufgabe verwenden kannst:
+Das Yodeck-Projekt arbeitet mit einigen vordefinierten Farben, die hier über **Variablen** eingesetzt verden. Variablen sind Worte im Code, die für einen beliebigen Wert stehen können, wie beispielsweise ein `x` in der Mathematik. Die **Definition** der Farbvariablen findest du ganz am Anfang der `index`-Datei. Hier werden die Werte der einzelnen Variablen festgelegt.
 
 ```css
 :root {
@@ -203,6 +203,11 @@ Ganz oben in der `index.html`-Daten findest du einige vordefinierte Farben, die 
 }
 ```
 
+> [!NOTE]
+> Wenn Du verstanden hast, wie dass die Farbvariablen funktionieren, darfst Du auch eigene Farben definieren, um Dein Design zu erstellen.
+
+Finde nun die folgende Stelle im Code. Hier werden für die verschiedenen Elemente der Seite die Farben definiert.
+
 ```css
 /* Hintergrundfarbe */
 body {
@@ -221,55 +226,16 @@ body {
 }
 ```
 
-## 3. Codeanpassungen pushen
-
-### 3.1 Staging
-
-Als ersten Schritt musst du deine Änderungen **stagen**. Du sagst dem Git-Programm, welche veränderten Dateien hochgeladen werden sollen. Da wir nur die `index.html`-Datei verändert haben, können wir problemlos alle Änderungen stagen. Führe dafür den folgenden Befehl aus:
-
-```sh
-git add .
-```
+Versuche nun, für die einzelnen Elemente andere Farben einzusetzen. Schau Dir dafür deine Seite im Browser an, um zu sehen, was sich verändert. Wenn Du ein eigenes Design gefunden hast, das gut lesbar ist und das Dir gefällt, erstelle wieder eine neue Version.
 
 > [!TIP]
-> Der Punkt bei `git add .` bedeutet, dass ALLE bearbeiteten Dateien für einen Commit staged werden. Wenn nur bestimmte veränderte Dateien in den Commit aufgenommen werden sollten, können diese auch einzeln hinzugefügt werden.
-> Beispiel: `git add index.html`
-
-### 3.2 Commit
-
-```sh
-git commit -m "Hintergrundfarbe geändert"
-```
-> [!TIP]
-> Der Befehl «git commit -m "Hintergrundfarbe geändert"» erstellt einen neuen Commit in deinem Git‑Repository und speichert alle aktuell vorgemerkten Änderungen (staged changes) zusammen mit der Commit‑Nachricht " Hintergrundfarbe geändert".
-> Beispiel: `git commit -m "Hintergrundfarbe geändert"`
-
-### 3.3 Push
-
-```sh
-git push
-```
-> Aktuell sind deine Änderungen nur auf dem lokalen Gerät gespeichert. </br>
-> Mit “git push” werden sie auf den Git-Server hochgeladen.
-
-
-## 4. Aktualisierte Webseite anzeigen
-> [!TIP]
-> Weil es ein paar Sekunden dauert, bis die Webseite aktualisiert deployt wurde, solltest du etwa eine Minute warten:
-
-### 4.1 InPrivate-Fenster in Microsoft Edge öffnen:
-
-![alt text](docs/screenshots/image.png)
-
-### 4.2 Folgenden Hyperlink in URL von Webbrowser eingeben:
-
-```sh
-https://espas-bi-it-edu.github.io/yodeck-welcome-screen/
-```
-![alt text](docs/screenshots/image-1.png)
-
-## 4. Yodeck
-
+> Beispiel: Dunkler Hintergrund
+>
+> ```css
+> body {
+>   background-color: var(--black);
+> }
+> ```
 
 ## Weitere Informationen
 

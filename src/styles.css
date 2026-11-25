@@ -1,0 +1,89 @@
+/* Variable Definitions */
+:root {
+  --gutters: 48px;
+}
+
+/* CSS Reset */
+html,
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* General Font Settings */
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: xx-large;
+  font-weight: 500;
+}
+
+/* Match Element Size to Screen */
+.screen {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Flex Container */
+.container {
+  display: flex;
+
+  gap: var(--gutters);
+  padding: var(--gutters);
+}
+
+/* Flex Column */
+.column {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+
+  gap: calc(var(--gutters) * 2 / 3);
+  justify-content: center;
+}
+
+/* General Card Styling */
+.card {
+  padding: 32px 48px;
+
+  border-radius: 1.5rem;
+  box-shadow: 0 16px 32px rgba(33, 37, 41, .3);
+}
+
+/* Welcome Card Styling */
+.welcome-card {
+  text-align: center;
+
+  .icon {
+    font-size: 144px;
+  }
+
+  .name {
+    font-size: 64px;
+
+    margin: 64px 0;
+  }
+}
+
+/* Info Card Styling */
+.info-card {
+  display: flex;
+
+  align-items: center;
+  gap: 32px;
+
+  .icon {
+    font-size: 80px;
+  }
+
+  ul {
+    flex-grow: 1;
+
+    list-style: none;
+
+    text-align: end;
+  }
+}

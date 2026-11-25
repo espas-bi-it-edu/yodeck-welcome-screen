@@ -17,7 +17,7 @@ cd 'C:\Users\bmschnupperer\OneDrive - ESPAS Stiftung\Schnuppertransfer\Vorname N
 > [!IMPORTANT]
 > Ersetze im Befehl `Vorname Nachname` mit Deinem eigenen Namen.
 >
-> Beispiel:
+> **Beispiel:**
 >
 > ```sh
 > cd 'C:\Users\bmschnupperer\OneDrive - ESPAS Stiftung\Schnuppertransfer\Max Mustermann'
@@ -35,6 +35,8 @@ Navigiere nun in den neu erstellten Ordner der Repository:
 cd .\yodeck-welcome-screen
 ```
 
+---
+
 ### 1.2 - Eigenen Branch erstellen
 
 Als Erstes erstellst Du Deinen eigenen **Branch** (auf deutsch **Ast**) des Projekts. Auf Branches können Entwickler Änderungen am Code vornehmen, ohne den **`main`-Branch**, also den **Hauptbranch** oder **Stamm** des Projekts, oder die Branches Anderer zu beeinträchtigen.
@@ -48,7 +50,7 @@ git checkout -b Vorname-Nachname
 > [!IMPORTANT]
 > Ersetze `Vorname-Nachname` mit Deinem eigenen Namen **mit** Bindestrichen dazwischen!
 >
-> Beispiel:
+> **Beispiel:**
 >
 > ```sh
 > git checkout -b Max-Mustermann
@@ -63,6 +65,8 @@ git push -u origin Vorname-Nachname
 Der Befehl erstellt Deinen Branch auf dem GitHub Repository und **verlinkt** ihn mit Deinem **lokalen Branch**. Wenn Du dann in den nächsten Schritten Änderungen am Code vornimmst und diese auf GitHub hochlädst, weiss Git nun, wo es die Aktualisierungen hinlegen muss.
 
 Jetzt bist Du bereit, dich in den Code zu stürzen.
+
+---
 
 ## 2 - Code anpassen
 
@@ -97,6 +101,8 @@ Suche im Explorer (links) im `src`-Ordner nach der Datei `index.html` und klicke
 > [!TIP]
 > Wenn du sehen willst, wie die Webseite mit deinen Änderungen aussieht, dann kannst du sie ganz einfach im Web-Browser öffnen indem du im Windows Explorer die `index.html`-Datei öffnest. Wenn Du weitere Änderungen vornimmst, musst Du die Seite neu laden, damit sie angezeigt werden.
 
+---
+
 ### 2.2 - Neue Version erstellen
 
 Jetzt hast Du deine erste Änderung am Code gemacht. Nun wirst Du diese neue Version auf GitHub hochladen. Das passiert in drei Phasen:
@@ -118,7 +124,7 @@ Der Befehl nimmt alle Dateien, die gegenüber der vorherigen Version Veränderun
 > [!NOTE]
 > Der Punkt bei `git add .` bedeutet, dass **alle** bearbeiteten Dateien für einen Commit staged werden. Wenn nur bestimmte veränderte Dateien in den Commit aufgenommen werden sollten, können diese auch gezielt hinzugefügt werden.
 >
-> Beispiel:
+> **Beispiel:**
 >
 > ```sh
 > git add index.html
@@ -137,7 +143,7 @@ git commit -m "Nachricht"
 > [!IMPORTANT]
 > Ersetze die `Nachricht` mit einem kurzen Text, der die von Dir gemachten Änderungen beschreibt.
 >
-> Beispiel:
+> **Beispiel:**
 >
 > ```sh
 > git commit -m "Name des Schnupperer eingefügt"
@@ -155,6 +161,8 @@ Der Befehl nimmt alle neuen Versionen und schickt sie zum GitHub-Server, wo sie 
 
 > [!NOTE]
 > Der ganze Commit-Prozess ist etwas, das ein Entwickler immer wieder macht. Du wirst im Rahmen dieser Aufgabe mehrmals hierhin zurückkehren und das Ganze nochmals durchführen.
+
+---
 
 ### 2.3 - Namen und Funktion des Götti einsetzen
 
@@ -179,6 +187,8 @@ Wenn Du das erledigt hast, erstelle wieder eine neue Version, so wie Du es im Ka
 
 > [!IMPORTANT]
 > Schreibe eine eigene **Commit-Message**, die die von Dir gemachten Änderungen beschreibt.
+
+---
 
 ### 2.4 - Farben anpassen
 
@@ -232,13 +242,15 @@ body {
 Versuche nun, für die einzelnen Elemente andere Farben einzusetzen. Schau Dir dafür deine Seite im Browser an, um zu sehen, was sich verändert. Wenn Du ein eigenes Design gefunden hast, das gut lesbar ist und das Dir gefällt, erstelle wieder eine neue Version.
 
 > [!TIP]
-> Beispiel: Dunkler Hintergrund
+> **Beispiel: Dunkler Hintergrund**
 >
 > ```css
 > body {
 >   background-color: var(--black);
 > }
 > ```
+
+---
 
 ## Weitere Informationen
 

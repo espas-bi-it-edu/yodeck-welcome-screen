@@ -11,7 +11,7 @@ Damit Du überhaupt mit dem Yodeck-Projekt anfangen kannst, musst Du es zuerst a
 Öffne ein Terminal und navigiere zu Deinem persönlichen Ordner auf dem OneDrive:
 
 ```sh
-cd 'C:\Users\bmschnupperer\OneDrive - ESPAS Stiftung\Schnuppertransfer\Vorname Nachname'
+cd 'C:\Users\bmschnupperer\OneDrive - ESPAS Stiftung\Schnuppertransfer\Vorname Nachname\Arbeiten'
 ```
 
 > [!IMPORTANT]
@@ -20,7 +20,7 @@ cd 'C:\Users\bmschnupperer\OneDrive - ESPAS Stiftung\Schnuppertransfer\Vorname N
 > **Beispiel:**
 >
 > ```sh
-> cd 'C:\Users\bmschnupperer\OneDrive - ESPAS Stiftung\Schnuppertransfer\Max Mustermann'
+> cd 'C:\Users\bmschnupperer\OneDrive - ESPAS Stiftung\Schnuppertransfer\Max Mustermann\Arbeiten'
 > ```
 
 Jetzt bist Du am richtigen Ort, um das Projekt herunterzuladen. Mit dem folgenden Befehl erstellst Du eine lokale Kopie, auf welcher Du arbeiten kannst:
